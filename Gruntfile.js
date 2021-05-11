@@ -27,19 +27,19 @@ module.exports = function (grunt) {
 
     var fileCreatorTask = {};
     var lessFiles = {
-        "dist/material-light.css": "less/style.less",
-        "dist/material-static.css": "less/static.less"
+        "../gh-page/dist/material-light.css": "less/style.less",
+        "../gh-page/dist/material-static.css": "less/static.less"
     };
 
     var replaceFiles = [
-        {src: ['dist/material-light.css'], dest: 'dist/material-light.css'},
-        {src: ['dist/material-static.css'], dest: 'dist/material-static.css'},
+        {src: ['../gh-page/dist/material-light.css'], dest: '../gh-page/dist/material-light.css'},
+        {src: ['../gh-page/dist/material-static.css'], dest: '../gh-page/dist/material-static.css'},
         {src: ['plugin/pom.xml'], dest: 'plugin/pom.xml'}
     ];
 
     var cssMinFiles = {
-        'dist/material-light.css': ['dist/material-light.css'],
-        'dist/material-static.css': ['dist/material-static.css']
+        '../gh-page/dist/material-light.css': ['../gh-page/dist/material-light.css'],
+        '../gh-page/dist/material-static.css': ['../gh-page/dist/material-static.css']
     };
 
     for (var name in colors) {
@@ -49,7 +49,7 @@ module.exports = function (grunt) {
             fs.writeFileSync(fd, \'@import "../less/style";@color-primary:' + color + ';@color-link:' + color + ';\');\
             done();\
         }');
-        var distFile = 'dist/material-' + name + '.css';
+        var distFile = '../gh-page/dist/material-' + name + '.css';
 
         lessFiles[distFile] = '.tmp/' + name + '.less';
         replaceFiles.push({src: [distFile], dest: distFile});
@@ -64,7 +64,7 @@ module.exports = function (grunt) {
 
         clean: {
             dist: {
-                src: ["dist/*"]
+                src: ["../gh-page/dist/*"]
             }
         },
 
