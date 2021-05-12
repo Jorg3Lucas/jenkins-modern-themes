@@ -31,12 +31,6 @@ module.exports = function (grunt) {
         "dist/material-static.css": "less/static.less"
     };
 
-    var replaceFiles = [
-        {src: ['dist/material-light.css'], dest: 'dist/material-light.css'},
-        {src: ['dist/material-static.css'], dest: 'dist/material-static.css'},
-        {src: ['plugin/pom.xml'], dest: 'plugin/pom.xml'}
-    ];
-
     for (var name in colors) {
         var color = colors[name];
 
@@ -47,7 +41,6 @@ module.exports = function (grunt) {
         var distFile = 'dist/material-' + name + '.css';
 
         lessFiles[distFile] = '.tmp/' + name + '.less';
-        replaceFiles.push({src: [distFile], dest: distFile});
     }
 
 
@@ -117,26 +110,13 @@ module.exports = function (grunt) {
 
         less: {
             dist: {
-                files: lessFiles
-            }
-        },
-
-        replace: {
-            dist: {
+                files: lessFiles,
                 options: {
-                    patterns: [
-                        {
-                            match: 'version',
-                            replacement: pkg.version
-                        },
-                        {
-                            match: /material-theme<\/artifactId>\s+<version>[^>]*<\/version>/g,
-                            replacement: 'material-theme</artifactId>\n    <version>' + pkg.version + '</version>'
-                        }
-                    ]
+                    modifyVars: {
+                        version: '"' + pkg.version + '"'
+                    },
                 },
-                files: replaceFiles
-            }
+            },
         },
 
         postcss: {
@@ -183,7 +163,7 @@ module.exports = function (grunt) {
     });
 
     // Default task(s).
-    grunt.registerTask('default', ['clean', 'file-creator', 'imagemin', 'less', 'replace', 'postcss']);
+    grunt.registerTask('default', ['clean', 'file-creator', 'imagemin', 'less', 'postcss']);
     grunt.registerTask('test', ['default', 'fileExists']);
 
 
