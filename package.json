@@ -45,5 +45,8 @@
     "pixrem": "^5.0.0",
     "postcss-encode-base64-inlined-images": "0.0.2"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "browserslist": [
+    "last 2 versions"
+  ]
 }
