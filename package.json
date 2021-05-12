@@ -35,7 +35,7 @@
     "grunt-file-exists": "^0.1.4",
     "grunt-image-embed": "^0.3.3",
     "grunt-postcss": "^0.9.0",
-    "grunt-replace": "^0.11.0",
+    "grunt-replace": "^2.0.2",
     "grunt-rev": "^0.1.0",
     "imagemin-svgo": "^9.0.0",
     "install": "^0.3.0",
