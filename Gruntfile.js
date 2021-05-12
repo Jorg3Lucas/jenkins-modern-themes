@@ -37,11 +37,6 @@ module.exports = function (grunt) {
         {src: ['plugin/pom.xml'], dest: 'plugin/pom.xml'}
     ];
 
-    var cssMinFiles = {
-        'dist/material-light.css': ['dist/material-light.css'],
-        'dist/material-static.css': ['dist/material-static.css']
-    };
-
     for (var name in colors) {
         var color = colors[name];
 
@@ -53,7 +48,6 @@ module.exports = function (grunt) {
 
         lessFiles[distFile] = '.tmp/' + name + '.less';
         replaceFiles.push({src: [distFile], dest: distFile});
-        cssMinFiles[distFile] = distFile
     }
 
 
@@ -145,12 +139,6 @@ module.exports = function (grunt) {
             }
         },
 
-        cssmin: {
-            minify: {
-                files: cssMinFiles
-            }
-        },
-
         postcss: {
             options: {
                 map: false,
@@ -195,7 +183,7 @@ module.exports = function (grunt) {
     });
 
     // Default task(s).
-    grunt.registerTask('default', ['clean', 'file-creator', 'imagemin', 'less', 'replace', 'cssmin', 'postcss']);
+    grunt.registerTask('default', ['clean', 'file-creator', 'imagemin', 'less', 'replace', 'postcss']);
     grunt.registerTask('test', ['default', 'fileExists']);
 
 

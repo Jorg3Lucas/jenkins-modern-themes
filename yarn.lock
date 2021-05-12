@@ -2207,13 +2207,6 @@ grunt-contrib-copy@^1.0.0:
     chalk "^1.1.1"
     file-sync-cmp "^0.1.0"
 
-grunt-contrib-cssmin@^0.6.2:
-  version "0.6.2"
-  resolved "https://registry.yarnpkg.com/grunt-contrib-cssmin/-/grunt-contrib-cssmin-0.6.2.tgz#2804dc0e81f98e8a54d61eee84a1d3fe1a3af8e2"
-  dependencies:
-    clean-css "~1.1.1"
-    grunt-lib-contrib "~0.6.0"
-
 grunt-contrib-imagemin@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/grunt-contrib-imagemin/-/grunt-contrib-imagemin-4.0.0.tgz#ae917feb0514aedc3d24c90579b1341d577f2cd3"
