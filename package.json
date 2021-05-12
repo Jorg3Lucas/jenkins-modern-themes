@@ -40,7 +40,7 @@
     "imagemin-svgo": "^9.0.0",
     "install": "^0.3.0",
     "jenkins-core-theme": "^1.1.40",
-    "load-grunt-tasks": "^3.3.0",
+    "load-grunt-tasks": "^5.1.0",
     "npm": "^7.12.1",
     "pixrem": "^5.0.0",
     "postcss-encode-base64-inlined-images": "0.0.2"
