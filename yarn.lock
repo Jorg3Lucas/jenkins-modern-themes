@@ -3060,9 +3060,9 @@ isurl@^1.0.0-alpha5:
     has-to-string-tag-x "^1.2.0"
     is-object "^1.0.1"
 
-jenkins-core-theme@^1.1.40:
+jenkins-core-theme@Jorg3Lucas/jenkins-core-theme:
   version "1.1.41"
-  resolved "https://registry.yarnpkg.com/jenkins-core-theme/-/jenkins-core-theme-1.1.41.tgz#5b5c692e755c3014f78e67f162048ca50996f1f5"
+  resolved "https://codeload.github.com/Jorg3Lucas/jenkins-core-theme/tar.gz/39bbf291129a0672786a789906f1243412f45601"
 
 jpegtran-bin@^4.0.0:
   version "4.0.0"
