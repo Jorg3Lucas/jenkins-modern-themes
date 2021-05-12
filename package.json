@@ -39,7 +39,7 @@
     "install": "^0.13.0",
     "jenkins-core-theme": "Jorg3Lucas/jenkins-core-theme",
     "load-grunt-tasks": "^5.1.0",
-    "npm": "^6.14.6",
+    "npm": "^7.12.1",
     "pixrem": "^5.0.0",
     "postcss-encode-base64-inlined-images": "0.0.2"
   },
