@@ -125,7 +125,6 @@ module.exports = function (grunt) {
                 map: false,
                 processors: [
                     require('autoprefixer')(),
-                    require('postcss-encode-base64-inlined-images'),
                     require('cssnano')() // minify the result
                 ]
             },
