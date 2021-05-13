@@ -24,11 +24,9 @@
     "cssnano": "^4.1.11",
     "grunt": "^1.3.0",
     "grunt-contrib-clean": "^2.0.0",
-    "grunt-contrib-imagemin": "^4.0.0",
     "grunt-contrib-less": "^3.0.0",
     "grunt-file-creator": "^0.1.3",
     "grunt-postcss": "^0.9.0",
-    "imagemin-svgo": "^9.0.0",
     "jenkins-core-theme": "Jorg3Lucas/jenkins-core-theme",
     "load-grunt-tasks": "^5.1.0"
   },
