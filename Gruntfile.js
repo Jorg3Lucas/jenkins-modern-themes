@@ -131,40 +131,9 @@ module.exports = function (grunt) {
             dist: {
                 src: 'dist/material*.css'
             }
-        },
-
-        imageEmbed: {
-            light: {
-                src: ["dist/material-light.css"],
-                dest: "dist/material-light.css",
-                options: {
-                    deleteAfterEncoding: false
-                }
-            }, light_blue: {
-                src: ["dist/material-light-blue.css"],
-                dest: "dist/material-light-blue.css",
-                options: {
-                    deleteAfterEncoding: false
-                }
-            },
-            static: {
-                src: ["dist/material-static.css"],
-                dest: "dist/material-static.css",
-                options: {
-                    deleteAfterEncoding: false
-                }
-            }
-        },
-
-        fileExists: {
-            scripts: Object.keys(lessFiles)
         }
-
     });
 
-    // Default task(s).
+    // Default task
     grunt.registerTask('default', ['clean', 'file-creator', 'imagemin', 'less', 'postcss']);
-    grunt.registerTask('test', ['default', 'fileExists']);
-
-
 };
