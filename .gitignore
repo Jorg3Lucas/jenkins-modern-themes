@@ -5,6 +5,4 @@ node_modules/
 .sass-cache/
 _site/
 dist/
-hpi/material-theme/
-hpi/material-theme.zip
 .tmp/
