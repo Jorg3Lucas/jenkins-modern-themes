@@ -69,11 +69,11 @@ You can turn your favorite frog CI tool into a handsome prince in few steps! Ins
 
 ## Development
 
-CSS file are minified and compressed with Grunt. To prepare the environment:
+CSS file are minified and compressed with Grunt. If you have Node & yarn installed, you can build everything with:
 
 ```
-npm install
-grunt
+yarn install
+yarn test
 ```
 
 This will generate the following file:
