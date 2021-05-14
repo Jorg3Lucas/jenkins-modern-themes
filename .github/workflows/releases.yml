@@ -1,0 +1,21 @@
+name: CI
+on: push
+jobs:
+  build:
+    name: Builds
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: install
+      - uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: test
+      - run: |
+          echo "Compiling themes and checking if there is a need to publish an update..."
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist/
+          git commit -m "Modern-Themes: New Update from commit $GITHUB_SHA"
+          git push
