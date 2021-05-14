@@ -1,20 +1,22 @@
 {
-  "name": "jenkins-material-theme",
-  "version": "2.0",
-  "description": "Material design theme for Jenkins",
+  "name": "jenkins-modern-themes",
+  "version": "1.0",
+  "description": "An updated project with modern themes based on jenkins-material-themes",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Jorg3Lucas/jenkins-material-theme"
+    "url": "https://github.com/Jorg3Lucas/jenkins-modern-themes"
   },
   "scripts": {
     "test": "grunt"
   },
   "keywords": [
+    "Modern Themes",
     "material design",
     "jenkins"
   ],
-  "author": "Afonso F",
+  "author": "Jorge Lucas",
   "contributors": [
+    "Afonso F",
     "David Porter",
     "Brady Vitrano"
   ],

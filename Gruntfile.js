@@ -28,8 +28,8 @@ module.exports = function (grunt) {
 
     var fileCreatorTask = {};
     var lessFiles = {
-        "dist/material-light.css": "less/style.less",
-        "dist/material-static.css": "less/static.less"
+        "dist/modern-light.css": "less/style.less",
+        "dist/modern-static.css": "less/static.less"
     };
 
     for (var name in colors) {
@@ -39,7 +39,7 @@ module.exports = function (grunt) {
             fs.writeFileSync(fd, \'@import "../less/style";@color-primary:' + color + ';@color-link:' + color + ';\');\
             done();\
         }');
-        var distFile = 'dist/material-' + name + '.css';
+        var distFile = 'dist/modern-' + name + '.css';
 
         lessFiles[distFile] = '.tmp/' + name + '.less';
     }
@@ -86,7 +86,7 @@ module.exports = function (grunt) {
                 ],
             },
             dist: {
-                src: 'dist/material*.css'
+                src: 'dist/modern*.css'
             }
         }
     });
