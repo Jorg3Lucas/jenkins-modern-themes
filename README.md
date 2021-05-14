@@ -1,5 +1,4 @@
 ![image](https://raw.githubusercontent.com/Jorg3Lucas/jenkins-material-theme/main/images/capa.jpg)
-# jenkins-material-theme ![Travis (.org) branch](https://img.shields.io/travis/Jorg3Lucas/jenkins-material-theme/main?style=flat-square)
 Beautify your Jenkins with the Material Design theme!
 
 Website: https://jorg3lucas.github.io/jenkins-material-theme

@@ -1,0 +1,20 @@
+name: CI
+on: [push]
+jobs:
+  build:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: install
+      - uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: test
+      - run: |
+          git config --global user.name "Jorge Lucas"
+          git config --global user.email "jorgelucas.sd@gmail.com"
+          git add dist/
+          git commit -m "kkk sexo"
+          git push
