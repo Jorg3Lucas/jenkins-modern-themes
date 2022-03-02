@@ -23,7 +23,7 @@
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^9.8.8",
-    "cssnano": "^4.1.11",
+    "cssnano": "^5.1.0",
     "grunt": "^1.4.1",
     "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-less": "^3.0.0",
