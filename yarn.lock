@@ -929,7 +929,8 @@ isobject@^3.0.0, isobject@^3.0.1:
 
 jenkins-core-theme@Jorg3Lucas/jenkins-core-theme:
   version "1.1.42"
-  resolved "https://codeload.github.com/Jorg3Lucas/jenkins-core-theme/tar.gz/2b2624d6f4b0f5feefb1ed88299b82cffd3ffcef"
+  uid "8f834c0326d7d609b5cf3baaca49e0da19abb8ac"
+  resolved "https://codeload.github.com/Jorg3Lucas/jenkins-core-theme/tar.gz/8f834c0326d7d609b5cf3baaca49e0da19abb8ac"
 
 js-yaml@^3.13.1, js-yaml@~3.14.0:
   version "3.14.1"
