@@ -6,10 +6,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: borales/actions-yarn@v2.0.0
+      - uses: borales/actions-yarn@v3.0.0
         with:
           cmd: install
-      - uses: borales/actions-yarn@v2.0.0
+      - uses: borales/actions-yarn@v3.0.0
         with:
           cmd: test
       - name: "Checking if there is a need to publish an update..."
