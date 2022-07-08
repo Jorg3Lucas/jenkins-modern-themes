@@ -6,6 +6,11 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500,300);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,700,500,300);
 
+// Workaround for Script Console background colour
+.CodeMirror {
+  background-color: @color-bg !important;
+}
+
 :not('div.ace_editor','textarea.ace_text-input') {
   font-family: 'Roboto', sans-serif;
   outline: none;
