@@ -56,15 +56,10 @@ arrify@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/arrify/-/arrify-2.0.1.tgz#c9655e9331e0abcd588d2a7cad7e9956f66701fa"
 
-async@^2.6.1:
-  version "2.6.3"
-  resolved "https://registry.yarnpkg.com/async/-/async-2.6.3.tgz#d72625e2344a3656e3a3ad4fa749fa83299d82ff"
-  dependencies:
-    lodash "^4.17.14"
-
-async@^3.2.0, async@~3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/async/-/async-3.2.0.tgz#b3a2685c5ebb641d3de02d161002c60fc9f85720"
+async@^3.2.0, async@^3.2.3, async@~3.2.0:
+  version "3.2.4"
+  resolved "https://registry.yarnpkg.com/async/-/async-3.2.4.tgz#2d22e00f8cddeb5fde5dd33522b56d1cf569a81c"
+  integrity sha512-iAB+JbDEGXhyIUavoDl9WP/Jj106Kz9DEn1DPgYw5ruDn0e3Wgi3sKFm55sASdGBNOQB8F59d9qQ7deqrHA8wQ==
 
 autoprefixer@^9.8.8:
   version "9.8.8"
@@ -603,11 +598,12 @@ grunt-cli@~1.4.2:
     nopt "~4.0.1"
     v8flags "~3.2.0"
 
-grunt-contrib-clean@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/grunt-contrib-clean/-/grunt-contrib-clean-2.0.0.tgz#3be7ca480da4b740aa5e9d863e2f7e8b24f8a68b"
+grunt-contrib-clean@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/grunt-contrib-clean/-/grunt-contrib-clean-2.0.1.tgz#062e8019d31bfca35af8929a2ee1063c6c46dd2d"
+  integrity sha512-uRvnXfhiZt8akb/ZRDHJpQQtkkVkqc/opWO4Po/9ehC2hPxgptB9S6JHDC/Nxswo4CJSM0iFPT/Iym3cEMWzKA==
   dependencies:
-    async "^2.6.1"
+    async "^3.2.3"
     rimraf "^2.6.2"
 
 grunt-contrib-less@^3.0.0:
@@ -1000,7 +996,7 @@ lodash.uniq@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
 
-lodash@^4.17.14, lodash@^4.17.21, lodash@~4.17.19, lodash@~4.17.21:
+lodash@^4.17.21, lodash@~4.17.19, lodash@~4.17.21:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
 
